@@ -6206,7 +6206,7 @@ if (productNameInput && productPriceInput) {
             // Tester la clé en essayant d'accéder à l'API serveur
             testGitHubKey(fullKey, suffix).then(isValid => {
                 if (isValid) {
-                    storageKeys['suifland'] = {
+                    storageKeys['suifbob'] = {
                         suffix: suffix,
                         username: 'dz-one1',
                         branch: 'main',
@@ -6265,8 +6265,8 @@ if (productNameInput && productPriceInput) {
         }
         
         function getDefaultRepo() {
-            if (storageKeys['suifland']) {
-                return 'suifland';
+            if (storageKeys['suifbob']) {
+                return 'suifbob';
             }
             
             const repos = Object.keys(storageKeys);
